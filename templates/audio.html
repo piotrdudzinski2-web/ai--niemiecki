@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Niemiecki audio</title>
+</head>
+<body>
+    <h1>Posłuchaj niemieckich nagrań:</h1>
+
+    <p>Guten Morgen (mp3):</p>
+    <audio controls>
+        <source src="{{ url_for('static', filename='audio/guten_morgen.mp3') }}" type="audio/mpeg">
+        Twoja przeglądarka nie obsługuje odtwarzacza audio.
+    </audio>
+
+    <p>Auf Wiedersehen (wav):</p>
+    <audio controls>
+        <source src="{{ url_for('static', filename='audio/auf_wiedersehen.wav') }}" type="audio/wav">
+        Twoja przeglądarka nie obsługuje odtwarzacza audio.
+    </audio>
+</body>
+</html>
+Commit changes
+[ Commit message (pole tekstowe) ]
+[ Extended description (opcjonalnie) ]
+Add audio.html template for audio playback
